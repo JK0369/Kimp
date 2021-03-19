@@ -49,7 +49,7 @@ platform :ios do
     sync_codesign(type:"appstore")
   end
 
-  # 공통 빌드 lane
+  # 공통 빌드
 
   desc "common build"
   lane :common_build do |options|
@@ -96,7 +96,7 @@ platform :ios do
     common_build(configuration:"Alpha")
   end
 
-  lane :build_beta do |options|
+  lane :build_beta do
     sync_codesign(type:"adhoc")
     build_number_bump()
     common_build(configuration: "Beta")

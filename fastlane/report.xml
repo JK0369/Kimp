@@ -5,24 +5,62 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="0: default_platform" time="0.00035">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000451">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="1: Switch to ios build_alpha lane" time="0.000172">
+      <testcase classname="fastlane.lanes" name="01: Switch to ios sync_codesign lane" time="0.000166">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="2: Switch to ios sync_codesign lane" time="0.000161">
+      <testcase classname="fastlane.lanes" name="02: match" time="4.107039">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="3: match" time="4.152214">
+      <testcase classname="fastlane.lanes" name="03: Switch to ios build_number_bump lane" time="0.000225">
         
-          <failure message="/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:33:in `block (2 levels) in parsing_binding'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:94:in `block (2 levels) in parsing_binding'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:204:in `try_switch_to_lane'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:146:in `trigger_action_by_name'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:133:in `block (2 levels) in parsing_binding'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/commands_generator.rb:108:in `block (2 levels) in run'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:178:in `call'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/commander-fastlane-4.4.6/lib/commander/command.rb:153:in `run'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/commander-fastlane-4.4.6/lib/commander/runner.rb:476:in `run_active_command'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:76:in `run!'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/commander-fastlane-4.4.6/lib/commander/delegates.rb:15:in `run!'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/commands_generator.rb:352:in `run'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/commands_generator.rb:41:in `start'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/fastlane-2.178.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/bin/fastlane:23:in `load'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli/exec.rb:63:in `load'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli/exec.rb:63:in `kernel_load'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli/exec.rb:28:in `run'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli.rb:494:in `exec'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli.rb:30:in `dispatch'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/cli.rb:24:in `start'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/exe/bundle:49:in `block in &lt;top (required)&gt;'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/lib/bundler/friendly_errors.rb:130:in `with_friendly_errors'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bundler-2.2.4/exe/bundle:37:in `&lt;top (required)&gt;'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/bin/bundle:23:in `load'&#10;/Users/jongkwon-kim/.rbenv/versions/2.5.1/bin/bundle:23:in `&lt;main&gt;'&#10;&#10;No matching provisioning profiles found and can not create a new one because you enabled `readonly`. Check the output above for more information." />
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: ensure_git_status_clean" time="0.017048">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: increment_build_number" time="0.867397">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.267925">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: commit_version_bump" time="0.143318">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: push_to_git_remote" time="3.411412">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: Switch to ios common_build lane" time="0.000322">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: cocoapods" time="6.657743">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: build_app" time="99.321124">
         
       </testcase>
     
