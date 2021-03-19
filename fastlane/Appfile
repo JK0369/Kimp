@@ -1,0 +1,8 @@
+# default 번들 ID
+app_identifier("com.jake.Kimp.alpha")
+
+# Your Apple email address
+apple_id("palatable7@naver.com")
+
+# Developer Portal Team ID
+team_id("SS7U83UJNK") 

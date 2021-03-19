@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E472640485B1D2420F5F470 /* Pods_Kimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04AF4E91E90E26E3AD6C6D3 /* Pods_Kimp.framework */; };
 		E0364BA52604D9F100B3022C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA42604D9F100B3022C /* AppDelegate.swift */; };
 		E0364BA72604D9F100B3022C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA62604D9F100B3022C /* SceneDelegate.swift */; };
 		E0364BA92604D9F100B3022C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA82604D9F100B3022C /* ViewController.swift */; };
 		E0364BAC2604D9F100B3022C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0364BAA2604D9F100B3022C /* Main.storyboard */; };
 		E0364BAE2604D9F200B3022C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0364BAD2604D9F200B3022C /* Assets.xcassets */; };
 		E0364BB12604D9F200B3022C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0364BAF2604D9F200B3022C /* LaunchScreen.storyboard */; };
+		E0364BE72604DB4800B3022C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BE62604DB4800B3022C /* Domain.framework */; };
+		E0364BE82604DB4800B3022C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BE62604DB4800B3022C /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0364BEB2604DB4B00B3022C /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BEA2604DB4B00B3022C /* CommonExtension.framework */; };
+		E0364BEC2604DB4B00B3022C /* CommonExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BEA2604DB4B00B3022C /* CommonExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E0364BE92604DB4800B3022C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0364BE82604DB4800B3022C /* Domain.framework in Embed Frameworks */,
+				E0364BEC2604DB4B00B3022C /* CommonExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		37A29CCD638CF9022F4C14C7 /* Pods-Kimp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.debug.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.debug.xcconfig"; sourceTree = "<group>"; };
+		AB43A642C8448E1AE373FA3A /* Pods-Kimp.alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.alpha.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.alpha.xcconfig"; sourceTree = "<group>"; };
+		C04AF4E91E90E26E3AD6C6D3 /* Pods_Kimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86C17D2937EED42FA5AA134 /* Pods-Kimp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.release.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.release.xcconfig"; sourceTree = "<group>"; };
 		E0364BA12604D9F100B3022C /* Kimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0364BA42604D9F100B3022C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0364BA62604D9F100B3022C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +48,9 @@
 		E0364BAD2604D9F200B3022C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0364BB02604D9F200B3022C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0364BB22604D9F200B3022C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0364BE62604DB4800B3022C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0364BEA2604DB4B00B3022C /* CommonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43A6694AB6536777B340B6A /* Pods-Kimp.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.beta.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.beta.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +58,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0364BE72604DB4800B3022C /* Domain.framework in Frameworks */,
+				E0364BEB2604DB4B00B3022C /* CommonExtension.framework in Frameworks */,
+				1E472640485B1D2420F5F470 /* Pods_Kimp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67F8481A6C5BB58DE24B8563 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37A29CCD638CF9022F4C14C7 /* Pods-Kimp.debug.xcconfig */,
+				AB43A642C8448E1AE373FA3A /* Pods-Kimp.alpha.xcconfig */,
+				E43A6694AB6536777B340B6A /* Pods-Kimp.beta.xcconfig */,
+				D86C17D2937EED42FA5AA134 /* Pods-Kimp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		E0364B982604D9F100B3022C = {
 			isa = PBXGroup;
 			children = (
 				E0364BA32604D9F100B3022C /* Kimp */,
 				E0364BA22604D9F100B3022C /* Products */,
+				E0364BE52604DB4800B3022C /* Frameworks */,
+				67F8481A6C5BB58DE24B8563 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +111,16 @@
 			path = Kimp;
 			sourceTree = "<group>";
 		};
+		E0364BE52604DB4800B3022C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0364BEA2604DB4B00B3022C /* CommonExtension.framework */,
+				E0364BE62604DB4800B3022C /* Domain.framework */,
+				C04AF4E91E90E26E3AD6C6D3 /* Pods_Kimp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0364BB52604D9F200B3022C /* Build configuration list for PBXNativeTarget "Kimp" */;
 			buildPhases = (
+				1957D94AE8C9CBD8B327ED26 /* [CP] Check Pods Manifest.lock */,
 				E0364B9D2604D9F100B3022C /* Sources */,
 				E0364B9E2604D9F100B3022C /* Frameworks */,
 				E0364B9F2604D9F100B3022C /* Resources */,
+				E0364BE92604DB4800B3022C /* Embed Frameworks */,
+				B54C0D22B8A991171513065F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +188,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1957D94AE8C9CBD8B327ED26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kimp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54C0D22B8A991171513065F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimp/Pods-Kimp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kimp/Pods-Kimp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimp/Pods-Kimp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0364B9D2604D9F100B3022C /* Sources */ = {
@@ -283,18 +382,20 @@
 		};
 		E0364BB62604D9F200B3022C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37A29CCD638CF9022F4C14C7 /* Pods-Kimp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SS7U83UJNK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,11 +403,12 @@
 		};
 		E0364BB72604D9F200B3022C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D86C17D2937EED42FA5AA134 /* Pods-Kimp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SS7U83UJNK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -314,10 +416,175 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
+		};
+		E0364BED2604DD8C00B3022C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Alpha;
+		};
+		E0364BEE2604DD8C00B3022C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB43A642C8448E1AE373FA3A /* Pods-Kimp.alpha.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Kimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.alpha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Alpha;
+		};
+		E0364BEF2604DD8E00B3022C /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Beta;
+		};
+		E0364BF02604DD8E00B3022C /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43A6694AB6536777B340B6A /* Pods-Kimp.beta.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Kimp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Beta;
 		};
 /* End XCBuildConfiguration section */
 
@@ -326,6 +593,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0364BB32604D9F200B3022C /* Debug */,
+				E0364BED2604DD8C00B3022C /* Alpha */,
+				E0364BEF2604DD8E00B3022C /* Beta */,
 				E0364BB42604D9F200B3022C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -335,6 +604,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0364BB62604D9F200B3022C /* Debug */,
+				E0364BEE2604DD8C00B3022C /* Alpha */,
+				E0364BF02604DD8E00B3022C /* Beta */,
 				E0364BB72604D9F200B3022C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
