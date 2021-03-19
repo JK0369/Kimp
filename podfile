@@ -13,9 +13,14 @@ def shared_pods
     pod 'Moya'
 end
 
+def main_pods
+  pod 'Firebase'
+end
+
 target "Kimp" do
     project "Kimp/Kimp.project"
     shared_pods
+    main_pods
 end
 
 target "Domain" do

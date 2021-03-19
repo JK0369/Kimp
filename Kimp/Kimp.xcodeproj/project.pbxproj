@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E472640485B1D2420F5F470 /* Pods_Kimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04AF4E91E90E26E3AD6C6D3 /* Pods_Kimp.framework */; };
 		E0364BA52604D9F100B3022C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA42604D9F100B3022C /* AppDelegate.swift */; };
-		E0364BA72604D9F100B3022C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA62604D9F100B3022C /* SceneDelegate.swift */; };
 		E0364BA92604D9F100B3022C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0364BA82604D9F100B3022C /* ViewController.swift */; };
 		E0364BAC2604D9F100B3022C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0364BAA2604D9F100B3022C /* Main.storyboard */; };
 		E0364BAE2604D9F200B3022C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0364BAD2604D9F200B3022C /* Assets.xcassets */; };
@@ -18,6 +17,10 @@
 		E0364BE82604DB4800B3022C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BE62604DB4800B3022C /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0364BEB2604DB4B00B3022C /* CommonExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BEA2604DB4B00B3022C /* CommonExtension.framework */; };
 		E0364BEC2604DB4B00B3022C /* CommonExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0364BEA2604DB4B00B3022C /* CommonExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0B6FE2A26051357008E7BC2 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B6FE2626051357008E7BC2 /* GoogleService-Info-alpha.plist */; };
+		E0B6FE2B26051357008E7BC2 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B6FE2726051357008E7BC2 /* GoogleService-Info-beta.plist */; };
+		E0B6FE2C26051357008E7BC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B6FE2826051357008E7BC2 /* GoogleService-Info.plist */; };
+		E0B6FE2D26051357008E7BC2 /* GoogleService-Info-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B6FE2926051357008E7BC2 /* GoogleService-Info-debug.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +45,6 @@
 		D86C17D2937EED42FA5AA134 /* Pods-Kimp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.release.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.release.xcconfig"; sourceTree = "<group>"; };
 		E0364BA12604D9F100B3022C /* Kimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0364BA42604D9F100B3022C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0364BA62604D9F100B3022C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E0364BA82604D9F100B3022C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0364BAB2604D9F100B3022C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0364BAD2604D9F200B3022C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,10 @@
 		E0364BB22604D9F200B3022C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0364BE62604DB4800B3022C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0364BEA2604DB4B00B3022C /* CommonExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B6FE2626051357008E7BC2 /* GoogleService-Info-alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-alpha.plist"; sourceTree = "<group>"; };
+		E0B6FE2726051357008E7BC2 /* GoogleService-Info-beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-beta.plist"; sourceTree = "<group>"; };
+		E0B6FE2826051357008E7BC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0B6FE2926051357008E7BC2 /* GoogleService-Info-debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-debug.plist"; sourceTree = "<group>"; };
 		E43A6694AB6536777B340B6A /* Pods-Kimp.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kimp.beta.xcconfig"; path = "Target Support Files/Pods-Kimp/Pods-Kimp.beta.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,8 +106,8 @@
 		E0364BA32604D9F100B3022C /* Kimp */ = {
 			isa = PBXGroup;
 			children = (
+				E0B6FE252605133F008E7BC2 /* Service */,
 				E0364BA42604D9F100B3022C /* AppDelegate.swift */,
-				E0364BA62604D9F100B3022C /* SceneDelegate.swift */,
 				E0364BA82604D9F100B3022C /* ViewController.swift */,
 				E0364BAA2604D9F100B3022C /* Main.storyboard */,
 				E0364BAD2604D9F200B3022C /* Assets.xcassets */,
@@ -121,6 +127,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E0B6FE252605133F008E7BC2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E0B6FE2626051357008E7BC2 /* GoogleService-Info-alpha.plist */,
+				E0B6FE2726051357008E7BC2 /* GoogleService-Info-beta.plist */,
+				E0B6FE2926051357008E7BC2 /* GoogleService-Info-debug.plist */,
+				E0B6FE2826051357008E7BC2 /* GoogleService-Info.plist */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +151,7 @@
 				E0364B9F2604D9F100B3022C /* Resources */,
 				E0364BE92604DB4800B3022C /* Embed Frameworks */,
 				B54C0D22B8A991171513065F /* [CP] Embed Pods Frameworks */,
+				E0B6FE2E260515D9008E7BC2 /* Firebase GoogleService-info */,
 			);
 			buildRules = (
 			);
@@ -183,7 +201,11 @@
 			files = (
 				E0364BB12604D9F200B3022C /* LaunchScreen.storyboard in Resources */,
 				E0364BAE2604D9F200B3022C /* Assets.xcassets in Resources */,
+				E0B6FE2A26051357008E7BC2 /* GoogleService-Info-alpha.plist in Resources */,
+				E0B6FE2B26051357008E7BC2 /* GoogleService-Info-beta.plist in Resources */,
+				E0B6FE2D26051357008E7BC2 /* GoogleService-Info-debug.plist in Resources */,
 				E0364BAC2604D9F100B3022C /* Main.storyboard in Resources */,
+				E0B6FE2C26051357008E7BC2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +251,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kimp/Pods-Kimp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E0B6FE2E260515D9008E7BC2 /* Firebase GoogleService-info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase GoogleService-info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nif [ ${CONFIGURATION} == \"Release\" ]; then\n    echo \"Release\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-release.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == \"Beta\" ]; then  \n    echo \"Beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"Debug / Alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,7 +278,6 @@
 			files = (
 				E0364BA92604D9F100B3022C /* ViewController.swift in Sources */,
 				E0364BA52604D9F100B3022C /* AppDelegate.swift in Sources */,
-				E0364BA72604D9F100B3022C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,8 +425,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,9 +436,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.debug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.jake.Kimp.debug";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -407,8 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,9 +460,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.jake.Kimp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -489,8 +534,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,9 +545,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.alpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.jake.Kimp.alpha";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Alpha;
 		};
@@ -571,8 +619,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SS7U83UJNK;
 				INFOPLIST_FILE = Kimp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,9 +630,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jake.Kimp.beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.jake.Kimp.beta";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Beta;
 		};

@@ -1,8 +1,76 @@
+# 디폴트 값 정의 (밑의 for_lane과 일치하지 않는 fastfile의 함수 lane들은 해당 값 적용)
+
 # default 번들 ID
-app_identifier("com.jake.Kimp.alpha")
+app_identifier("com.jake.Kimp.debug")
 
 # Your Apple email address
 apple_id("palatable7@naver.com")
 
 # Developer Portal Team ID
 team_id("SS7U83UJNK") 
+
+# fastfile에 가기전에 app_identifier가 설정
+for_platform :ios do
+
+    # debug: 위에서 정한 default 번들 ID를 사용
+  
+    # alpha
+
+    for_lane :build_alpha do
+      app_identifier 'com.jake.Kimp.alpha'
+    end
+  
+    for_lane :renew_codesign_alpha do
+      app_identifier 'com.jake.Kimp.alpha'
+    end
+  
+    for_lane :sync_codesign_alpha do
+      app_identifier 'com.jake.Kimp.alpha'
+    end
+
+    for_lane :upload_firebase_alpha do
+      app_identifier 'com.jake.Kimp.alpha'
+    end
+
+    # beta
+
+    for_lane :build_beta do
+      app_identifier 'com.jake.Kimp.beta'
+    end
+  
+    for_lane :renew_codesign_beta do
+      app_identifier 'com.jake.Kimp.beta'
+    end
+  
+    for_lane :sync_codesign_beta do
+      app_identifier 'com.jake.Kimp.beta'
+    end
+
+    for_lane :upload_firebase_beta do
+      app_identifier 'com.jake.Kimp.beta'
+    end
+  
+    # release
+
+    for_lane :renew_codesign_release do
+        app_identifier 'com.jake.Kimp'
+    end
+
+    for_lane :sync_codesign_release do
+      app_identifier 'com.jake.Kimp'
+    end
+
+    for_lane :build_release do
+        app_identifier 'com.jake.Kimp'
+    end
+
+    for_lane :upload_testflight do
+        app_identifier 'com.jake.Kimp'
+    end
+
+    for_lane :upload_appstore do
+      app_identifier 'com.jake.Kimp'
+    end
+  
+  end
+  

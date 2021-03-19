@@ -1,23 +1,161 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
 
 default_platform(:ios)
 
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "xtjt-hxui-nyix-bsnm"
+
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  
+  # match 갱신 - git에 push (certificate, profile visioning)
+
+  private_lane :renew_codesign do|options|
+    match(type:options[:type], force_for_new_devices: true)
   end
+
+  lane :renew_codesign_debug do
+    renew_codesign(type:"development")
+  end
+
+  lane :renew_codesign_alpha do
+    renew_codesign(type:"adhoc")
+  end
+
+  lane :renew_codesign_beta do
+    renew_codesign(type:"adhoc")
+  end
+
+  lane :renew_codesign_release do
+    renew_codesign(type:"appstore")
+  end
+
+  # match 로드 (certificate, profile visioning)
+
+  private_lane :sync_codesign do|options|
+    match(type:options[:type], readonly: true)
+  end
+
+  lane :sync_codesign_debug do 
+    sync_codesign(type:"development")
+  end
+
+  lane :sync_codesign_alpha do
+    sync_codesign(type:"adhoc")
+  end
+
+  lane :sync_codesign_beta do
+    sync_codesign(type:"adhoc")
+  end
+
+  lane :sync_codesign_release do
+    sync_codesign(type:"appstore")
+  end
+
+  # 공통 빌드 lane
+
+  desc "common build"
+  lane :common_build do |options|
+    cocoapods(
+      clean_install: true,
+      try_repo_update_on_error: true
+    )
+
+    case options[:configuration]
+    when "Debug"
+      scheme = "Debug"
+      export_type = "development"
+    when "Alpha"
+      scheme = "Alpha"
+      export_type = "ad-hoc"
+    when "Beta"
+      scheme = "Beta"
+      export_type = "ad-hoc"
+    else 
+      scheme = "Release"
+      export_type = "app-store"
+    end
+
+    build_app(
+      scheme: "Kimp", # app name
+      configuration: scheme,
+      export_method: export_type,
+      output_directory: "./fastlane/distribute",
+      clean: true
+    )
+  end
+
+  # 빌드 호출
+
+  lane :build_debug do # debug로 할 경우 오류
+    sync_codesign(type:"development")
+    build_number_bump()
+    common_build(configuration:"Debug")
+  end
+
+  lane :build_alpha do
+    sync_codesign(type:"adhoc")
+    build_number_bump()
+    common_build(configuration:"Alpha")
+  end
+
+  lane :build_beta do |options|
+    sync_codesign(type:"adhoc")
+    build_number_bump()
+    common_build(configuration: "Beta")
+  end
+
+  lane :build_release do
+    sync_codesign(type:"appstore")
+    build_number_bump()
+    common_build(configuration:"Appstore")
+  end
+
+  # 빌드 번호 업 & commit
+
+  lane :build_number_bump do
+    ensure_git_status_clean
+    increment_build_number(xcodeproj: "./Kimp/Kimp.xcodeproj")
+    build_number = get_build_number(xcodeproj: "./Kimp/Kimp.xcodeproj")
+    commit_version_bump(message: "Bump build number to #{build_number} by fastlane", xcodeproj: "./Kimp/Kimp.xcodeproj")
+    push_to_git_remote
+  end
+
+  # firebase 업로드
+
+  lane :upload_to_firebase do |options|
+    firebase_app_distribution(
+      app: options[:appid],
+      groups: options[:tester_group],
+      firebase_cli_token: "1//0e-h7nTIJyTgeCgYIARAAGA4SNwF-L9IraFQcr4OVscUk376dZjnWCwHsiDmQBYSNL_pnZECOiScrtUCFn21ibJWKP_PM31gy10o",
+      ipa_path: "./fastlane/distribute/Kimp.ipa"
+    )
+  end
+
+  lane :upload_firebase_alpha do
+    build_alpha()
+    upload_to_firebase(appid: "1:1018046236453:ios:e162fe01a3c6e5ca857ccc", tester_group: "inHouse")
+  end
+
+  lane :upload_firebase_beta do
+    build_beta()
+    upload_to_firebase(appid: "1:1018046236453:ios:72ee3bbe45c657ab857ccc", tester_group: "inHouse")
+  end
+
+  # TestFlight
+
+  lane :upload_testflight do
+    build_release()
+    upload_to_testflight(
+      ipa: "./fastlane/distribute/Kimp.ipa",
+      skip_waiting_for_build_processing: true # false면 테스터에게 빌드된 것이 배포되지 않음
+    )
+  end
+
+  # Appstore
+  
+  lane :upload_appstore do 
+    release()
+    # capture_screenshots
+    deliver
+  end
+
 end
+
