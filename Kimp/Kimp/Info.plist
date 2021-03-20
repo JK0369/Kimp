@@ -18,14 +18,14 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
+	<key>DeployPhase</key>
+	<string>$(DEPLOY_PHASE)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

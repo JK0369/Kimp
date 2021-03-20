@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mU0-kA-70H">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="Usz-R4-RH5">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="mU0-kA-70H" customClass="SplashVC" customModule="Kimp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="at4-nX-LWp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-HE-g6W" customClass="OTPFieldView" customModule="Kimp" customModuleProvider="target">
+                                <rect key="frame" x="85.5" y="74" width="243" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="AG2-LR-lPT"/>
+                                    <constraint firstAttribute="width" constant="243" id="if6-0Q-zk0"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-sK-NhY">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="hello"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAx-H7-yCb">
+                                <rect key="frame" x="153.5" y="474.5" width="107" height="30"/>
+                                <state key="normal" title="routeFloatingEx"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizableKey" value="route-floating-ex"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mT1-HG-NTs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wG1-sK-NhY" firstAttribute="centerY" secondItem="at4-nX-LWp" secondAttribute="centerY" id="5Zf-Ga-e6i"/>
+                            <constraint firstItem="UAx-H7-yCb" firstAttribute="top" secondItem="wG1-sK-NhY" secondAttribute="bottom" constant="16" id="GHs-Re-5Qs"/>
+                            <constraint firstItem="mdd-HE-g6W" firstAttribute="top" secondItem="mT1-HG-NTs" secondAttribute="top" constant="30" id="HVd-0J-Pqv"/>
+                            <constraint firstItem="wG1-sK-NhY" firstAttribute="centerX" secondItem="at4-nX-LWp" secondAttribute="centerX" id="caU-hi-1Mb"/>
+                            <constraint firstItem="mdd-HE-g6W" firstAttribute="centerX" secondItem="at4-nX-LWp" secondAttribute="centerX" id="qje-qF-ySA"/>
+                            <constraint firstItem="UAx-H7-yCb" firstAttribute="centerX" secondItem="at4-nX-LWp" secondAttribute="centerX" id="utg-sl-Ofq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRoute" destination="UAx-H7-yCb" id="soH-y4-5fN"/>
+                        <outlet property="lblCenter" destination="wG1-sK-NhY" id="L8T-rH-3u1"/>
+                        <outlet property="otpView" destination="mdd-HE-g6W" id="0QR-j5-C3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nb3-Xs-6Sf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

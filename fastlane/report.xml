@@ -5,62 +5,77 @@
     
     
       
-      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000451">
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000428">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="01: Switch to ios sync_codesign lane" time="0.000166">
+      <testcase classname="fastlane.lanes" name="01: Switch to ios build_alpha lane" time="0.000178">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="02: match" time="4.107039">
+      <testcase classname="fastlane.lanes" name="02: Switch to ios sync_codesign lane" time="0.000158">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="03: Switch to ios build_number_bump lane" time="0.000225">
+      <testcase classname="fastlane.lanes" name="03: match" time="3.463289">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="04: ensure_git_status_clean" time="0.017048">
+      <testcase classname="fastlane.lanes" name="04: Switch to ios build_number_bump lane" time="0.000264">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="05: increment_build_number" time="0.867397">
+      <testcase classname="fastlane.lanes" name="05: ensure_git_status_clean" time="0.01586">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="06: get_build_number" time="0.267925">
+      <testcase classname="fastlane.lanes" name="06: increment_build_number" time="0.789247">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="07: commit_version_bump" time="0.143318">
+      <testcase classname="fastlane.lanes" name="07: get_build_number" time="0.241296">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="08: push_to_git_remote" time="3.411412">
+      <testcase classname="fastlane.lanes" name="08: commit_version_bump" time="0.114013">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="09: Switch to ios common_build lane" time="0.000322">
+      <testcase classname="fastlane.lanes" name="09: push_to_git_remote" time="4.038727">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="10: cocoapods" time="6.657743">
+      <testcase classname="fastlane.lanes" name="10: Switch to ios common_build lane" time="0.000361">
         
       </testcase>
     
       
-      <testcase classname="fastlane.lanes" name="11: build_app" time="99.321124">
+      <testcase classname="fastlane.lanes" name="11: cocoapods" time="3.222164">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: build_app" time="96.216076">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: Switch to ios upload_to_firebase lane" time="0.000202">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: firebase_app_distribution" time="11.985869">
         
       </testcase>
     

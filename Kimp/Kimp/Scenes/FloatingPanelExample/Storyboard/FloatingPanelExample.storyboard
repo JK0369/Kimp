@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My ContainerVC-->
+        <scene sceneID="IGq-lc-LgX">
+            <objects>
+                <viewController storyboardIdentifier="MyContainerVC" id="m70-Mp-gh2" customClass="MyContainerVC" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JxF-iN-zha">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ContainerVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcX-iK-jj7">
+                                <rect key="frame" x="159" y="362" width="96.5" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJS-EQ-FP1">
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
+                                <state key="normal" title="Tap"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JiB-Y2-wFY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="dJS-EQ-FP1" firstAttribute="centerY" secondItem="JxF-iN-zha" secondAttribute="centerY" id="0Gv-Dj-l0p"/>
+                            <constraint firstItem="dJS-EQ-FP1" firstAttribute="centerX" secondItem="JxF-iN-zha" secondAttribute="centerX" id="Srf-yc-y5a"/>
+                            <constraint firstItem="fcX-iK-jj7" firstAttribute="centerX" secondItem="JxF-iN-zha" secondAttribute="centerX" id="mQe-82-wHh"/>
+                            <constraint firstItem="dJS-EQ-FP1" firstAttribute="top" secondItem="fcX-iK-jj7" secondAttribute="bottom" constant="50" id="qhI-Dv-B1i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnTap" destination="dJS-EQ-FP1" id="wuc-RT-1uP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71l-VF-MrU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-584" y="286"/>
+        </scene>
+        <!--Sub1VC-->
+        <scene sceneID="e6o-eH-UMd">
+            <objects>
+                <viewController storyboardIdentifier="Sub1VC" id="oOO-ZH-TeF" customClass="Sub1VC" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tLc-Tb-SC2" customClass="PassThroughViewMine" customModule="BaseProject" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZY-GU-Mhf">
+                                <rect key="frame" x="0.0" y="732" width="414" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOE-Il-3M8">
+                                        <rect key="frame" x="188.5" y="54.5" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWf-db-Edw">
+                                        <rect key="frame" x="311" y="50" width="87" height="30"/>
+                                        <state key="normal" title="routeToSub2">
+                                            <color key="titleColor" red="0.91857761640000002" green="0.81790621770000005" blue="0.9998820424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-BR-oex">
+                                        <rect key="frame" x="16" y="50" width="135" height="30"/>
+                                        <state key="normal" title="requestToContainer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rWf-db-Edw" secondAttribute="trailing" constant="16" id="G9Z-kr-G7K"/>
+                                    <constraint firstItem="QOE-Il-3M8" firstAttribute="centerX" secondItem="uZY-GU-Mhf" secondAttribute="centerX" id="Ow2-U2-dBJ"/>
+                                    <constraint firstItem="qsf-BR-oex" firstAttribute="leading" secondItem="uZY-GU-Mhf" secondAttribute="leading" constant="16" id="Y2t-MI-I8e"/>
+                                    <constraint firstAttribute="height" constant="130" id="d2v-ab-eMI"/>
+                                    <constraint firstItem="rWf-db-Edw" firstAttribute="centerY" secondItem="uZY-GU-Mhf" secondAttribute="centerY" id="fP2-Ii-7v6"/>
+                                    <constraint firstItem="QOE-Il-3M8" firstAttribute="centerY" secondItem="uZY-GU-Mhf" secondAttribute="centerY" id="nsp-oG-Xhu"/>
+                                    <constraint firstItem="qsf-BR-oex" firstAttribute="centerY" secondItem="uZY-GU-Mhf" secondAttribute="centerY" id="ulH-5Q-ZMr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9C1-iu-Gzc"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9C1-iu-Gzc" firstAttribute="bottom" secondItem="uZY-GU-Mhf" secondAttribute="bottom" id="Xd2-N1-P9s"/>
+                            <constraint firstItem="9C1-iu-Gzc" firstAttribute="trailing" secondItem="uZY-GU-Mhf" secondAttribute="trailing" id="hmz-db-3i3"/>
+                            <constraint firstItem="uZY-GU-Mhf" firstAttribute="leading" secondItem="9C1-iu-Gzc" secondAttribute="leading" id="xVF-Rg-TjS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnRequestToContainer" destination="qsf-BR-oex" id="XOe-3h-SAL"/>
+                        <outlet property="btnRouteToSub2" destination="rWf-db-Edw" id="U50-IW-VJc"/>
+                        <outlet property="lbl" destination="QOE-Il-3M8" id="XHx-0v-3LU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7D-nR-dci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="285.9375"/>
+        </scene>
+        <!--Sub2VC-->
+        <scene sceneID="iUx-Nf-bVB">
+            <objects>
+                <viewController storyboardIdentifier="Sub2VC" id="1hT-yU-MSg" customClass="Sub2VC" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oTP-9T-pMX" customClass="PassThroughViewMine" customModule="BaseProject" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJK-ff-IMj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hts-fR-XTT">
+                                        <rect key="frame" x="187" y="54.5" width="40" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstItem="hts-fR-XTT" firstAttribute="centerX" secondItem="HJK-ff-IMj" secondAttribute="centerX" id="3US-uN-auZ"/>
+                                    <constraint firstItem="hts-fR-XTT" firstAttribute="centerY" secondItem="HJK-ff-IMj" secondAttribute="centerY" id="BRy-Up-SEd"/>
+                                    <constraint firstAttribute="height" constant="130" id="x3Y-eT-Ixb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7hj-za-cnt"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HJK-ff-IMj" firstAttribute="top" secondItem="7hj-za-cnt" secondAttribute="top" id="ARG-Nl-hcE"/>
+                            <constraint firstItem="HJK-ff-IMj" firstAttribute="trailing" secondItem="7hj-za-cnt" secondAttribute="trailing" id="rdU-4g-N64"/>
+                            <constraint firstItem="HJK-ff-IMj" firstAttribute="leading" secondItem="7hj-za-cnt" secondAttribute="leading" id="wcn-Bh-HpX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1FC-WH-Bkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

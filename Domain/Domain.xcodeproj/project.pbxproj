@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E01060282605AD770052169C /* UserDefaultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060052605AD760052169C /* UserDefaultWrapper.swift */; };
+		E01060292605AD770052169C /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060062605AD760052169C /* StoryboardInitializable.swift */; };
+		E010602A2605AD770052169C /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060072605AD760052169C /* DeeplinkManager.swift */; };
+		E010602B2605AD770052169C /* PostTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060082605AD760052169C /* PostTaskManager.swift */; };
+		E010602C2605AD770052169C /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010600A2605AD760052169C /* BaseButton.swift */; };
+		E010602D2605AD770052169C /* KeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010600C2605AD760052169C /* KeyValueStore.swift */; };
+		E010602E2605AD770052169C /* BaseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010600F2605AD760052169C /* BaseTargetType.swift */; };
+		E010602F2605AD770052169C /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060102605AD760052169C /* BaseResponse.swift */; };
+		E01060302605AD770052169C /* BaseServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060112605AD760052169C /* BaseServiceError.swift */; };
+		E01060312605AD770052169C /* BaseHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060122605AD760052169C /* BaseHeader.swift */; };
+		E01060322605AD770052169C /* MoyaProviderTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060132605AD760052169C /* MoyaProviderTypeExtension.swift */; };
+		E01060332605AD770052169C /* AppServiceSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060142605AD760052169C /* AppServiceSetting.swift */; };
+		E01060342605AD770052169C /* ResponseCodeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060152605AD760052169C /* ResponseCodeType.swift */; };
+		E01060352605AD770052169C /* BaseResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060162605AD760052169C /* BaseResponsable.swift */; };
+		E01060362605AD770052169C /* AppInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060172605AD760052169C /* AppInfoHeader.swift */; };
+		E01060372605AD770052169C /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010601A2605AD760052169C /* RefreshTokenRequest.swift */; };
+		E01060382605AD770052169C /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010601B2605AD760052169C /* RefreshTokenResponse.swift */; };
+		E01060392605AD770052169C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010601D2605AD760052169C /* UIView.swift */; };
+		E010603A2605AD770052169C /* ObservableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E010601E2605AD760052169C /* ObservableType.swift */; };
+		E010603B2605AD770052169C /* SmsOtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060212605AD770052169C /* SmsOtpResponse.swift */; };
+		E010603C2605AD770052169C /* SmsOtpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060222605AD770052169C /* SmsOtpRequest.swift */; };
+		E010603D2605AD770052169C /* OTPTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060242605AD770052169C /* OTPTarget.swift */; };
+		E010603E2605AD770052169C /* AccountTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060252605AD770052169C /* AccountTarget.swift */; };
+		E010603F2605AD770052169C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01060272605AD770052169C /* Constants.swift */; };
 		E0364BC82604DA0900B3022C /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = E0364BC62604DA0900B3022C /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAC4C2FF9192FDE46D7FFAD2 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E862EC4B9C2A97AC1F9841CE /* Pods_Domain.framework */; };
 /* End PBXBuildFile section */
@@ -15,6 +39,30 @@
 		1413733758137F27CA6DD514 /* Pods-Domain.alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.alpha.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.alpha.xcconfig"; sourceTree = "<group>"; };
 		74D9EA2BFB2BEC3B66220768 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		DF4F61BDF078AE7A64DFF989 /* Pods-Domain.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.beta.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.beta.xcconfig"; sourceTree = "<group>"; };
+		E01060052605AD760052169C /* UserDefaultWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultWrapper.swift; sourceTree = "<group>"; };
+		E01060062605AD760052169C /* StoryboardInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
+		E01060072605AD760052169C /* DeeplinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		E01060082605AD760052169C /* PostTaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTaskManager.swift; sourceTree = "<group>"; };
+		E010600A2605AD760052169C /* BaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		E010600C2605AD760052169C /* KeyValueStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStore.swift; sourceTree = "<group>"; };
+		E010600F2605AD760052169C /* BaseTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTargetType.swift; sourceTree = "<group>"; };
+		E01060102605AD760052169C /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		E01060112605AD760052169C /* BaseServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServiceError.swift; sourceTree = "<group>"; };
+		E01060122605AD760052169C /* BaseHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseHeader.swift; sourceTree = "<group>"; };
+		E01060132605AD760052169C /* MoyaProviderTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaProviderTypeExtension.swift; sourceTree = "<group>"; };
+		E01060142605AD760052169C /* AppServiceSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServiceSetting.swift; sourceTree = "<group>"; };
+		E01060152605AD760052169C /* ResponseCodeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCodeType.swift; sourceTree = "<group>"; };
+		E01060162605AD760052169C /* BaseResponsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResponsable.swift; sourceTree = "<group>"; };
+		E01060172605AD760052169C /* AppInfoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoHeader.swift; sourceTree = "<group>"; };
+		E010601A2605AD760052169C /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
+		E010601B2605AD760052169C /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
+		E010601D2605AD760052169C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E010601E2605AD760052169C /* ObservableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableType.swift; sourceTree = "<group>"; };
+		E01060212605AD770052169C /* SmsOtpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsOtpResponse.swift; sourceTree = "<group>"; };
+		E01060222605AD770052169C /* SmsOtpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmsOtpRequest.swift; sourceTree = "<group>"; };
+		E01060242605AD770052169C /* OTPTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTarget.swift; sourceTree = "<group>"; };
+		E01060252605AD770052169C /* AccountTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTarget.swift; sourceTree = "<group>"; };
+		E01060272605AD770052169C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E0364BC32604DA0900B3022C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0364BC62604DA0900B3022C /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		E0364BC72604DA0900B3022C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +102,119 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E01060042605AD760052169C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E01060052605AD760052169C /* UserDefaultWrapper.swift */,
+				E01060062605AD760052169C /* StoryboardInitializable.swift */,
+				E01060072605AD760052169C /* DeeplinkManager.swift */,
+				E01060082605AD760052169C /* PostTaskManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E01060092605AD760052169C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E010600A2605AD760052169C /* BaseButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E010600B2605AD760052169C /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				E010600C2605AD760052169C /* KeyValueStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		E010600D2605AD760052169C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E010600E2605AD760052169C /* Common */,
+				E01060182605AD760052169C /* Account */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E010600E2605AD760052169C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E010600F2605AD760052169C /* BaseTargetType.swift */,
+				E01060102605AD760052169C /* BaseResponse.swift */,
+				E01060112605AD760052169C /* BaseServiceError.swift */,
+				E01060122605AD760052169C /* BaseHeader.swift */,
+				E01060132605AD760052169C /* MoyaProviderTypeExtension.swift */,
+				E01060142605AD760052169C /* AppServiceSetting.swift */,
+				E01060152605AD760052169C /* ResponseCodeType.swift */,
+				E01060162605AD760052169C /* BaseResponsable.swift */,
+				E01060172605AD760052169C /* AppInfoHeader.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E01060182605AD760052169C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				E01060192605AD760052169C /* RefreshToken */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		E01060192605AD760052169C /* RefreshToken */ = {
+			isa = PBXGroup;
+			children = (
+				E010601A2605AD760052169C /* RefreshTokenRequest.swift */,
+				E010601B2605AD760052169C /* RefreshTokenResponse.swift */,
+			);
+			path = RefreshToken;
+			sourceTree = "<group>";
+		};
+		E010601C2605AD760052169C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E010601D2605AD760052169C /* UIView.swift */,
+				E010601E2605AD760052169C /* ObservableType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E010601F2605AD760052169C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E01060202605AD770052169C /* Models */,
+				E01060232605AD770052169C /* TargetType */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E01060202605AD770052169C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E01060212605AD770052169C /* SmsOtpResponse.swift */,
+				E01060222605AD770052169C /* SmsOtpRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E01060232605AD770052169C /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				E01060242605AD770052169C /* OTPTarget.swift */,
+				E01060252605AD770052169C /* AccountTarget.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		E01060262605AD770052169C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E01060272605AD770052169C /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		E0364BB92604DA0900B3022C = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +236,13 @@
 		E0364BC52604DA0900B3022C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				E01060092605AD760052169C /* Components */,
+				E01060262605AD770052169C /* Constants */,
+				E010601C2605AD760052169C /* Extensions */,
+				E010600D2605AD760052169C /* Models */,
+				E010601F2605AD760052169C /* Network */,
+				E010600B2605AD760052169C /* Stores */,
+				E01060042605AD760052169C /* Utils */,
 				E0364BC62604DA0900B3022C /* Domain.h */,
 				E0364BC72604DA0900B3022C /* Info.plist */,
 			);
@@ -185,6 +353,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E010603A2605AD770052169C /* ObservableType.swift in Sources */,
+				E01060342605AD770052169C /* ResponseCodeType.swift in Sources */,
+				E010603D2605AD770052169C /* OTPTarget.swift in Sources */,
+				E01060352605AD770052169C /* BaseResponsable.swift in Sources */,
+				E010602B2605AD770052169C /* PostTaskManager.swift in Sources */,
+				E010603E2605AD770052169C /* AccountTarget.swift in Sources */,
+				E010602C2605AD770052169C /* BaseButton.swift in Sources */,
+				E010602A2605AD770052169C /* DeeplinkManager.swift in Sources */,
+				E010602E2605AD770052169C /* BaseTargetType.swift in Sources */,
+				E01060382605AD770052169C /* RefreshTokenResponse.swift in Sources */,
+				E010603B2605AD770052169C /* SmsOtpResponse.swift in Sources */,
+				E01060292605AD770052169C /* StoryboardInitializable.swift in Sources */,
+				E01060362605AD770052169C /* AppInfoHeader.swift in Sources */,
+				E01060282605AD770052169C /* UserDefaultWrapper.swift in Sources */,
+				E010602D2605AD770052169C /* KeyValueStore.swift in Sources */,
+				E01060312605AD770052169C /* BaseHeader.swift in Sources */,
+				E01060302605AD770052169C /* BaseServiceError.swift in Sources */,
+				E010603C2605AD770052169C /* SmsOtpRequest.swift in Sources */,
+				E010602F2605AD770052169C /* BaseResponse.swift in Sources */,
+				E01060372605AD770052169C /* RefreshTokenRequest.swift in Sources */,
+				E01060332605AD770052169C /* AppServiceSetting.swift in Sources */,
+				E01060392605AD770052169C /* UIView.swift in Sources */,
+				E01060322605AD770052169C /* MoyaProviderTypeExtension.swift in Sources */,
+				E010603F2605AD770052169C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

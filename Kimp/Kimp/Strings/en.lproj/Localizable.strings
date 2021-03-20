@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  BaseProject
+
+  Created by 김종권 on 2021/01/20.
+  
+*/
+
+"hello" = "hello";
+"server-error" = "server error";
+"error" = "error";
+"error-server-default-message" = "server error";
+"error-temporary" = "temporary error";
+"route-floating-ex" = "routeFloatingEx";

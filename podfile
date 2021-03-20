@@ -1,20 +1,38 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '14.0'
+platform :ios, '13.0'
 use_frameworks!
 
 workspace 'Kimp'
-project 'Domain/Domain.project'
 project 'Kimp/Kimp.project'
+project 'Domain/Domain.project'
 
 def shared_pods
     pod 'RxSwift'
     pod 'RxCocoa'
-    pod 'Moya'
+    pod 'RxGesture'
+    pod 'Toast-Swift'
+    pod 'JGProgressHUD'
+    pod 'RxReachability'
+    pod 'Kingfisher'
+    pod 'XCoordinator'
+    pod 'Kingfisher'
+    pod 'AnyFormatKit'
+    pod 'Moya/RxSwift'
+    pod 'XCoordinator'
+    pod 'KeychainAccess'
 end
 
 def main_pods
+  pod 'Hero'
+  pod 'lottie-ios'
+  pod 'Material'
+  pod 'SCLAlertView'
+  pod 'R.swift'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/wowansm/Chameleon', :branch => 'swift5'
   pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'FloatingPanel'
 end
 
 target "Kimp" do
@@ -24,6 +42,6 @@ target "Kimp" do
 end
 
 target "Domain" do
-    project "Domain/Domain.project"
-    shared_pods
+  project "Domain/Domain.project"
+  shared_pods
 end
